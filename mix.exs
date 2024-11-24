@@ -2,13 +2,13 @@ defmodule ExLibSRTP.Mixfile do
   use Mix.Project
 
   @version "0.7.2"
-  @github_url "https://github.com/membraneframework/ex_libsrtp"
+  @github_url "https://github.com/beam-campus/ex_libsrtp"
 
   def project do
     [
       app: :ex_libsrtp,
       version: @version,
-      elixir: "~> 1.12",
+      elixir: "~> 1.17",
       compilers: [:unifex, :bundlex] ++ Mix.compilers(),
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
